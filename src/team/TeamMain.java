@@ -2,6 +2,8 @@ package team;
 
 import java.util.Scanner;
 
+import cny.Student;
+
 public class TeamMain {
 	
 	public static void main(String[] args) {
@@ -16,7 +18,8 @@ public class TeamMain {
 		select = scan.nextInt();
 		
 		if(select == 1) {
-			
+			Student s = new Student();
+			s.info();
 		}else if(select == 2) {
 			
 		}else if(select == 3) {
