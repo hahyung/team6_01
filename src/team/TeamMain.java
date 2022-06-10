@@ -2,11 +2,11 @@ package team;
 
 import java.util.Scanner;
 
-
 import ssg.SSG;
 
 import lhh.Hstudent;
 
+import cny.Student;
 
 public class TeamMain {
 	
@@ -16,6 +16,8 @@ public class TeamMain {
 		SSG ssg = new SSG();
 
 		Hstudent hs = new Hstudent();
+		
+		Student s = new Student();
 		
 		Scanner scan = new Scanner(System.in);
 		int select;
@@ -29,7 +31,7 @@ public class TeamMain {
 			select = scan.nextInt();
 			
 			if(select == 1) {
-				
+				s.info();
 			}else if(select == 2) {
 				hs.display();
 			}else if(select == 3) {
@@ -37,6 +39,7 @@ public class TeamMain {
 			}else {
 				System.exit(0);
 			}
+
 		}
 	}
 }	
